@@ -1,0 +1,18 @@
+$kind: collection
+name: Project
+variables:
+  - key: json_web_token_0gi4
+    secret: true
+    disabled: false
+  - key: supabase_service_role_api_key_0b2j
+    secret: true
+    disabled: false
+  - key: json_web_token_0b2j
+    secret: true
+    disabled: false
+  - key: supabase_service_role_api_key_086o
+    secret: true
+    disabled: false
+  - key: json_web_token_050s
+    secret: true
+    disabled: false

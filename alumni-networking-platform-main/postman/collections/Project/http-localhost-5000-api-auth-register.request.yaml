@@ -1,0 +1,21 @@
+$kind: http-request
+name: http://localhost:5000/api/auth/register
+description: ""
+url: http://localhost:5000/api/auth/register
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"fullName\": \"Kenil Dobariya\",\r
+
+    \  \"email\": \"kenil.student@gmail.com\",\r
+
+    \  \"password\": \"Password@123\",\r
+
+    \  \"role\": \"student\"\r
+
+    }"
+auth:
+  type: noauth
+order: 1787211302929

@@ -1,0 +1,10 @@
+$kind: http-request
+name: http://localhost:5000/api/jobs/my/posted
+description: ""
+url: http://localhost:5000/api/jobs/my/posted
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0gi4}}"
+order: 4503599267398848

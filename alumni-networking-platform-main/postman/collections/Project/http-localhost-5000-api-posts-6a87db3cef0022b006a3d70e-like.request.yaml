@@ -1,0 +1,9 @@
+$kind: http-request
+name: http://localhost:5000/api/posts/6a87db3cef0022b006a3d70e/like
+description: ""
+url: http://localhost:5000/api/posts/6a87db3cef0022b006a3d70e/like
+method: POST
+body:
+  type: json
+  content: ""
+order: 4503599627338983

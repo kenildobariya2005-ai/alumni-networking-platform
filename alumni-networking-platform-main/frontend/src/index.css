@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* =============================================
+       ALUMNICONNECT DESIGN SYSTEM - DARK THEME
+       ============================================= */
+    --bg-primary: #0B1120;
+    --bg-sidebar: #111827;
+    --bg-card: #151E32;
+    --bg-elevated: #1E293B;
+    --bg-input: #202B40;
+    --border: #26334D;
+    --border-input: #334155;
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+    --accent: #6366F1;
+    --accent-hover: #818CF8;
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --error: #EF4444;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #0B1120;
+    color: #CBD5E1;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background-color: #6366F1;
+    color: #ffffff;
+  }
+
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="time"] {
+    color-scheme: dark;
+  }
+
+  select {
+    background-color: #202B40;
+    color: #F8FAFC;
+    border-color: #334155;
+  }
+
+  select option {
+    background-color: #151E32;
+    color: #F8FAFC;
+  }
+
+  textarea {
+    background-color: #202B40;
+    color: #F8FAFC;
+    border-color: #334155;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0B1120;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #26334D;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(16px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .animate-fade-in { animation: fadeIn 0.3s ease-out forwards; }
+  .animate-slide-up { animation: slideUp 0.35s ease-out forwards; }
+  .animate-slide-in-right { animation: slideInRight 0.3s ease-out forwards; }
+
+  .skeleton { background-color: #202B40; animation: pulse 1.8s ease-in-out infinite; border-radius: 0.5rem; }
+}
+
+@layer components {
+  .card-dark { background-color: #151E32; border: 1px solid #26334D; border-radius: 1rem; }
+  .card-elevated { background-color: #1E293B; border: 1px solid #26334D; border-radius: 1rem; }
+  .input-dark { background-color: #202B40; border: 1px solid #334155; border-radius: 0.75rem; color: #F8FAFC; }
+  .badge-accent { background-color: rgba(99, 102, 241, 0.15); color: #818CF8; border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 9999px; }
+  .badge-success { background-color: rgba(16, 185, 129, 0.1); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 9999px; }
+  .badge-warning { background-color: rgba(245, 158, 11, 0.1); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 9999px; }
+  .badge-error { background-color: rgba(239, 68, 68, 0.1); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 9999px; }
+  .skill-tag { padding: 2px 8px; border-radius: 6px; background-color: #202B40; color: #CBD5E1; font-size: 0.75rem; font-weight: 500; border: 1px solid #334155; }
+  .divider-dark { border-top: 1px solid #26334D; }
+  .notif-icon-wrap { padding: 10px; border-radius: 12px; background-color: #202B40; border: 1px solid #26334D; flex-shrink: 0; }
+}

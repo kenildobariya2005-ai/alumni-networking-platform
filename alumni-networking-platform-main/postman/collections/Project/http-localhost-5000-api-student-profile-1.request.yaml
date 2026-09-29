@@ -1,0 +1,10 @@
+$kind: http-request
+name: http://localhost:5000/api/student/profile
+description: ""
+url: http://localhost:5000/api/student/profile
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhODZhYmY3ZTc2YmM4ZmM5MGE0OTY4NCIsImlhdCI6MTc4NzIxMTQ0MSwiZXhwIjoxNzg3ODE2MjQxfQ.5kh3F5uIsHBS8ebClCvGF4EUWpRCc-0ILEWDjNjmNFI
+order: 4500478635482360

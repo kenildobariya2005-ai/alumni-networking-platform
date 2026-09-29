@@ -1,0 +1,15 @@
+$kind: http-request
+name: http://localhost:5000/api/mentorship/6a86b6844b80a000aba8e2e4/schedule
+description: ""
+url: http://localhost:5000/api/mentorship/6a86b6844b80a000aba8e2e4/schedule
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \  \"scheduledAt\": \"2026-09-10T15:00:00.000Z\",\r
+
+    \  \"meetingLink\": \"https://meet.example.com/mentorship-123\"\r
+
+    }"
+order: 4503599626000822

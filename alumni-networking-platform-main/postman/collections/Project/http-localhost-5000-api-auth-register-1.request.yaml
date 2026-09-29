@@ -1,0 +1,19 @@
+$kind: http-request
+name: http://localhost:5000/api/auth/register
+description: ""
+url: http://localhost:5000/api/auth/register
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"fullName\": \"Dobariya Kenil\",\r
+
+    \  \"email\": \"kenil.alumni@gmail.com\",\r
+
+    \  \"password\": \"Kenil@2005\",\r
+
+    \  \"role\": \"alumni\"\r
+
+    }"
+order: 87359948412585

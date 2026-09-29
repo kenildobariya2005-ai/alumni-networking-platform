@@ -1,0 +1,10 @@
+$kind: http-request
+name: http://localhost:5000/api/auth/profile
+description: ""
+url: http://localhost:5000/api/auth/profile
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhODZhYmY3ZTc2YmM4ZmM5MGE0OTY4NCIsImlhdCI6MTc4NzIxMDg4NiwiZXhwIjoxNzg3ODE1Njg2fQ.P8rW9A17Ncf3iB05x-P7T4DxPXBsG_NYbA5sY5kMOcE
+order: 4348408589585051

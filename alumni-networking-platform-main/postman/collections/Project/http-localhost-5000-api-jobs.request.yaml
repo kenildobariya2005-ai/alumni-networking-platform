@@ -1,0 +1,45 @@
+$kind: http-request
+name: http://localhost:5000/api/jobs
+description: ""
+url: http://localhost:5000/api/jobs
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"MERN Stack Developer Intern\",\r
+
+    \  \"description\": \"We are looking for a motivated MERN Stack Developer Intern to join our engineering team.\",\r
+
+    \  \"company\": \"TechNova Solutions\",\r
+
+    \  \"location\": \"Ahmedabad\",\r
+
+    \  \"jobType\": \"Internship\",\r
+
+    \  \"employmentType\": \"Full-time\",\r
+
+    \  \"salaryRange\": \"₹20,000 - ₹30,000/month\",\r
+
+    \  \"requiredSkills\": [\r
+
+    \    \"React\",\r
+
+    \    \"Node.js\",\r
+
+    \    \"MongoDB\",\r
+
+    \    \"Express.js\",\r
+
+    \    \"JavaScript\"\r
+
+    \  ],\r
+
+    \  \"deadline\": \"2026-09-30\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhODZhYzRmZTc2YmM4ZmM5MGE0OTY4NyIsImlhdCI6MTc4NzIxMTQwMSwiZXhwIjoxNzg3ODE2MjAxfQ.Kd_oRjxSf-kCMP1aVGFP-NK3MYwf-sPiho7xsjTbz6o
+order: 4503591727231009

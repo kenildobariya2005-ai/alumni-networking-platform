@@ -1,0 +1,23 @@
+$kind: http-request
+name: http://localhost:5000/api/mentorship/request
+description: ""
+url: http://localhost:5000/api/mentorship/request
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"mentor\": \"6a86ac4fe76bc8fc90a49687\",\r
+
+    \  \"topic\": \"MERN Stack Career Guidance\",\r
+
+    \  \"message\": \"I would like guidance regarding MERN stack development.\",\r
+
+    \  \"preferredDate\": \"2026-09-10T10:00:00.000Z\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{supabase_service_role_api_key_0b2j}}"
+order: 4503599598570421

@@ -1,0 +1,9 @@
+$kind: http-request
+name: http://localhost:5000/api/projects
+description: ""
+url: http://localhost:5000/api/projects?page=1&limit=10
+method: GET
+queryParams:
+  page: "1"
+  limit: "10"
+order: 4503599627362920

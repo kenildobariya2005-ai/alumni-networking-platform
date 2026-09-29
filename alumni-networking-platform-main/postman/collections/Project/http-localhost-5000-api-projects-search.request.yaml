@@ -1,0 +1,8 @@
+$kind: http-request
+name: http://localhost:5000/api/projects/search
+description: ""
+url: http://localhost:5000/api/projects/search?skill=React
+method: GET
+queryParams:
+  skill: React
+order: 4503599627364172

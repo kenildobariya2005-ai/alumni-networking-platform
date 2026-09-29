@@ -1,0 +1,43 @@
+$kind: http-request
+name: http://localhost:5000/api/alumni/profile
+description: ""
+url: http://localhost:5000/api/alumni/profile
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"company\": \"Google\",\r
+
+    \  \"designation\": \"Software Engineer\",\r
+
+    \  \"experienceYears\": 4,\r
+
+    \  \"location\": \"Bangalore\",\r
+
+    \  \"bio\": \"Software Engineer with experience in scalable web applications.\",\r
+
+    \  \"skills\": [\r
+
+    \    \"JavaScript\",\r
+
+    \    \"React\",\r
+
+    \    \"Node.js\",\r
+
+    \    \"MongoDB\",\r
+
+    \    \"AWS\"\r
+
+    \  ],\r
+
+    \  \"linkedin\": \"https://linkedin.com/in/rahul\",\r
+
+    \  \"mentorAvailable\": true\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhODZhYzRmZTc2YmM4ZmM5MGE0OTY4NyIsImlhdCI6MTc4NzIxMTQwMSwiZXhwIjoxNzg3ODE2MjAxfQ.Kd_oRjxSf-kCMP1aVGFP-NK3MYwf-sPiho7xsjTbz6o
+order: 4503488493997881

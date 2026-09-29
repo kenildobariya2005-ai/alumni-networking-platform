@@ -1,0 +1,21 @@
+$kind: http-request
+name: http://localhost:5000/api/posts
+description: ""
+url: http://localhost:5000/api/posts
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"content\": \"I am currently learning MERN Stack development and building an Alumni Networking Platform.\",\r
+
+    \  \"tags\": [\"MERN\", \"React\", \"Career\"],\r
+
+    \  \"visibility\": \"institution\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_050s}}"
+order: 4503599627166229

@@ -1,0 +1,9 @@
+$kind: http-request
+name: http://localhost:5000/api/mentorship/6a86b6844b80a000aba8e2e4/accept
+description: ""
+url: http://localhost:5000/api/mentorship/6a86b6844b80a000aba8e2e4/accept
+method: PATCH
+body:
+  type: json
+  content: ""
+order: 4503599624683512

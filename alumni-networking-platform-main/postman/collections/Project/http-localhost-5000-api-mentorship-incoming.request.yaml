@@ -1,0 +1,10 @@
+$kind: http-request
+name: http://localhost:5000/api/mentorship/incoming
+description: ""
+url: http://localhost:5000/api/mentorship/incoming
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{supabase_service_role_api_key_086o}}"
+order: 4503599624160530
